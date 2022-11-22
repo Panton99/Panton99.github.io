@@ -147,7 +147,10 @@
     width:200px;
     height:200px; 
     top:200px;
-}
+  }
+  .embed-container iframe{
+    pointer-events: none;
+   }
   
   th {
     background-color: #617f85;
