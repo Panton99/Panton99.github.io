@@ -144,10 +144,7 @@
     border-radius: 50%;
     margin-left: 20px;
   }
-  .embed-container iframe{
-    pointer-events: none;
-   }
-  
+ 
   th {
     background-color: #617f85;
     color: white;
