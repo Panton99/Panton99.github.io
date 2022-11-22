@@ -1,0 +1,163 @@
+/* Css style sheet*/
+/*style for wider version */
+@media screen and (min-width: 505px) {
+    .side-menu {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .side-menu div {
+      display: block;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-left: 15px;
+    }
+    .menu-icon {
+      display: none;
+    }
+    .side-menu a {
+      padding: 20px;
+    }
+  }
+  
+  body {
+    background-color: snow;
+    width: 100%;
+    height: 100%;
+  }
+  
+  :root {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* menu style in mobile version */
+  /* when checking the toggle - menu shows when narrow size */
+  .menu-links {
+    display: none;
+  }
+  
+  .side-menu {
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    background-color: #afc9c9;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+
+  #menu-toggle:checked + .menu-links {
+    display: inline-flex;
+  }
+  
+  .side-menu div {
+    list-style: none;
+  }
+  
+  .side-menu li {
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  .side-menu a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20x;
+    margin: 20px auto;
+    text-transform: uppercase;
+    color: #685997;
+  }
+  
+  .side-menu a:hover {
+    transition: all 0.25s linear;
+    background-color: #80b1ba;
+    border-radius: 12px;
+    color: white;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    font-size: 25px;
+    color: #685997;
+  }
+  
+  /* check box for dark mode */
+  #dark-mode:checked ~ .Home-main {
+    background-color: #1a2424;
+    color:#afc9c9;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  .dark-mode {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 55px;
+    color:#685997;
+  }
+  label a{
+    font-size: 11px;
+    color: #685997;
+    font-style: oblique;
+  }
+  .text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    padding: 10px;
+  }
+
+  .textBody {
+   padding:10px;
+  }
+  
+  .text button {
+    margin-left: 30px;
+    border-style: solid;
+    color: #685997;
+    padding: 0.7rem;
+    border-radius: 12px;
+    font-weight: bold;
+    background-color: #afc9c9;
+    transition-duration: 0.4s;
+    text-decoration: none;
+  }
+
+  .text button:hover {
+    background-color: #80b1ba;
+    color: white;
+  }
+
+  .dark-mode:hover {
+    transition: all 0.25s linear;
+    background-color: #afc9c9;
+    border-radius: 12px;
+  }
+  
+  .Jisoo-img {
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  
+  th {
+    background-color: #617f85;
+    color: white;
+  }
+  tr {
+    border-bottom: 2px solid #737879;
+  }
+  tr:hover {
+    background-color: #dceeee;
+  }
+  .resume-pdf {
+    margin-left: 15%;
+    width: 70%;
+    height: 100%;
+  }
+  

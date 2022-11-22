@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Hello, I am Jisoo" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Jisoo Kim - Website</title>
+  </head>
+  <body>
+    <div class="container">
+     <!-- menu (mobile size: menu icon shows up, checkbox) -->
+      <nav class="side-menu">
+        <label class="menu-icon" aria-label="open menu" for="menu-toggle"
+          >&#9776;
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <div class="menu-links">
+          <a href="Jisoo-home.html" class="active">Home</a>
+          <a href="Jisoo-about.html">About Jisoo</a>
+          <a href="Jisoo-projects.html">Projects and Publications</a>
+          <a href="Jisoo-resume.html">Resume</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- main body -->
+    <main>
+      <div class="Home-about">
+        <div class="text">
+          <!-- introduction -->
+          <img
+            class="Jisoo-img"
+            src="./JKim.JPG"
+            alt="A smiling photo of Jisoo, has a long, black and curly hair"
+            style="width: 200px; height: 200px; margin-top: 60px"
+          />
+          <h1 class="Home-main-introduction">Hi, I am Jisoo</h1>
+          <p>
+            I am a graduate student at Boston University MET majoring in
+            Computer Science. <br /><br />
+            I grew up and was educated in South Korea. Currently, I live in
+            Boston with my family.<br /><br />
+            My educational background is Microbiology with Biomedical
+            Science(B.S) and Environmental Health Science(MPH). <br /><br />
+            3 years of working experience in microbiome sequencing and
+            Biological data engineering. <br /><br />
+            I am trying to pivot into software engineering roles.<br /><br />
+          </p>
+
+          <p>
+            I love Splatoon3 Switch gaming, coffee, and online-work out name
+            'mvvv club'.<br /><br />
+            My coffee of choice is a coffee bean name "Big Joy" from Camber
+            Coffee. <br /><br />
+            If you want to talk more, feel free to reach me at
+            <button
+              onclick="window.location.href='https://www.linkedin.com/in/jisoo-lee-b200a215b'"
+            >
+              linkedin
+            </button>
+          </p>
+          <!-- video -->
+          <a
+            >This video is a online-working out team 'mvvv club', and left-side
+            photo is my Splatoon3 ID name<br /><br
+          /></a>
+          <video width="450" height="400" controls>
+            <source
+              src="./mvvv.MP4"
+              type="video/MP4"
+              title="online-workout video of 'mvvv club'"
+            />
+          </video>
+          <!-- image of splatoon -->
+          <img
+            class="about-splatoon-img"
+            src="./splatoon1.jpg"
+            alt="A splatoon image with information about Jisoo's game log and id"
+            style="width: 310px; height: 400px"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
