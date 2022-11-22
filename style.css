@@ -141,9 +141,13 @@
   }
   
   .Jisoo-img {
+    position:relative; 
     border-radius: 50%;
     margin-left: 20px;
-  }
+    width:200px;
+    height:200px; 
+    top:200px;  
+}
   
   th {
     background-color: #617f85;
