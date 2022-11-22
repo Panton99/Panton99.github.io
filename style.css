@@ -51,7 +51,7 @@
   }
 
   #menu-toggle:checked + .menu-links {
-    display: inline-flex;
+    display: block;
   }
   
   .side-menu div {
