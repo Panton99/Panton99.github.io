@@ -3,7 +3,7 @@
 @media screen and (min-width: 505px) {
     .side-menu {
       height: 100%;
-      display: flex;
+      display: flexbox;
       align-items: center;
       text-align: center;
     }
@@ -38,7 +38,7 @@
     display: none;
   }
   
-  .side-menu {
+  .head-class {
     overflow: hidden;
     text-align: center;
     display: block;
@@ -87,26 +87,23 @@
   }
   
   /* check box for dark mode */
-  #dark-mode:checked ~ .Home-main {
+  .dark-mode {
     background-color: #1a2424;
     color:#afc9c9;
   }
-  
-  input[type="checkbox"] {
-    display: none;
-  }
-  .dark-mode {
-    margin-left: 20px;
-    font-size: 50px;
+
+  #dark-button {
+    border: none;
+    background-color: #afc9c9;
+    font-size: 38px;
     color:#685997;
   }
-
-  .dark-mode:hover {
+ 
+  #dark-button:hover {
     transition: all 0.25s;
     background-color: #afc9c9;
-    border-radius: 50%;
     padding: 3px;
-    color: #55487b
+    color: #2b1f4d
   }
 
   label a{

@@ -7,47 +7,48 @@
     <title>Jisoo Kim - Website</title>
   </head>
   <body>
-    <div class="main">
-      <input id="dark-mode" type="checkbox" name="dark-mode">
-      <label for="dark-mode">
-        <span class="dark-mode">&#9789;</span>
-        <a> click for dark mode</a>
-       </label> 
-    <!-- menu (mobile size: menu icon shows up, checkbox) -->
-     <nav class="side-menu">
-      <label class="menu-icon" aria-label="open menu" for="menu-toggle"
-        >&#9776;
-      </label>
-      <input type="checkbox" id="menu-toggle" />
-        <div class="menu-links">
-          <a href="index.html" class="active">Home</a>
-          <a href="Jisoo-about.html">About Jisoo</a>
-          <a href="Jisoo-projects.html">Projects and Publications</a>
-          <a href="Jisoo-resume.html">Resume</a>
-        </div>    
-        
-    </nav>
-     <!-- dark mode checkbox -->
-      <div class="Home-main">
+    <div id ="main" class="main">
+      <script  src="style.js"></script>
+      <div class="head-class">
+        <div class="header-wrapper">
+           <!-- menu (mobile size: menu icon shows up, checkbox) -->
+          <nav class="side-menu">
+            <label class="menu-icon" aria-label="open menu" for="menu-toggle"
+            >&#9776;
+            </label>
+            <input type="checkbox" id="menu-toggle" />
+              <div class="menu-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="Jisoo-about.html">About Jisoo</a>
+                <a href="Jisoo-projects.html">Projects and Publications</a>
+                <a href="Jisoo-resume.html">Resume</a>
+                <button type="button" value="dark" id="dark-button" onclick="onClick()">&#9789;</button>
+              </div>    
+          </nav>  
+        </div>
+      </div>
+      <div id="Home-main" class="Home-main">
         <div class="textBody">
         <div class="text">
           <!-- brief introduction -->
-          <iframe class="Jisoo-img" src="https://drive.google.com/file/d/1rQk9UOiWYOI3wR0OuqCUgC0dou7oesp-/preview"  width="300px" height="300px" alt="A smiling photo of Jisoo, has a long, black and curly hair"></iframe>
+          <iframe class="Jisoo-img" src="https://drive.google.com/file/d/1rQk9UOiWYOI3wR0OuqCUgC0dou7oesp-/preview"  width="300" height="300"></iframe>
           <h1 class="Home-main-introduction">Jisoo Kim</h1>
           <!-- list of summary -->
           <p>
-            <li>
-              Computer Science graduate student at Boston University
-              <br /><br />
-            </li>
-            <li>Belmont, MA <br /><br /></li>
-            <li>She/Her/Hers <br /><br /></li>
-            <li>
+            <ul>
+              <li>
+               Computer Science graduate student at Boston University<br><br>
+              </li>
+              <li>Belmont, MA <br><br></li>
+              <li>She/Her/Hers <br><br></li>
+              <li>
               If you want to find more click 'ABOUT JISOO' &#128512;
-            </li>
+              </li>
+          </ul>
           </p>
         </div>
        </div>
+      </div>
       </div>
   </body>
 </html>

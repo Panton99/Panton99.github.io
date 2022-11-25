@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Jisoo-projects" />
-    <link href="style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="description" content="Jisoo-projects">
+    <link href="style.css" rel="stylesheet">
 
     <title>Jisoo Kim - Website</title>
   </head>
   <body>
     <div class="main">
-      <input id="dark-mode" type="checkbox" name="dark-mode">
-      <label for="dark-mode">
-        <span class="dark-mode">&#9789;</span>
-        <a> click for dark mode</a>
-       </label> 
+      <script  src="style.js"></script>
      <!-- menu (mobile size: menu icon shows up, checkbox) -->
+     <div class="head-class">
       <nav class="side-menu">
       <label class="menu-icon" aria-label="open menu" for="menu-toggle"
         >&#9776;
       </label>
-      <input type="checkbox" id="menu-toggle" />
+      <input type="checkbox" id="menu-toggle">
  
         <div class="menu-links">
           <a href="index.html" class="active">Home</a>
           <a href="Jisoo-about.html">About Jisoo</a>
           <a href="Jisoo-projects.html">Projects and Publications</a>
           <a href="Jisoo-resume.html">Resume</a>
+          <button type="button" value="dark" id="dark-button" onclick="onClick()">&#9789;</button>
         </div>
       </nav>
+      </div>
     <!-- main body -->
-      <div class="Home-main">
+      <div  id="Home-main" class="Home-main">
         <div class="text">
           <h1>Projects and publications</h1>
           <!-- BU image -->
@@ -37,15 +36,14 @@
             class="about-BU-img"
             src="https://www.bu.edu/brand/files/2019/06/master_logo.gif"
             alt="BU logo"
-            style="width: 100px; height: 70"
-          />
+            style="width: 100px; height: 45px"
+          >
           <!-- project link -->
           <ul>
             <li>
               <strong
                 >Projects are listed in my Github. What I have learned from
-                BU.<br
-              /></strong>
+                BU.<br></strong>
             </li>
           </ul>
           <button onclick="window.location.href='https://github.com/Panton99'">
@@ -53,7 +51,7 @@
           </button>
           <ul>
             <li>
-              <strong>Published journal lists<br /></strong>
+              <strong>Published journal lists<br></strong>
             </li>
           </ul>
 
@@ -68,9 +66,9 @@
               <td>1</td>
               <td>
                 Lee, K., <strong>Kim, J.</strong>, Sim, J., Park, S., Shim, J.,
-                and Lee, J. (2021).<br />
+                and Lee, J. (2021).<br>
                 Lactobacillus plantarum HY7715 Ameliorates Sarcopenia by
-                Improving Skeletal Muscle<br />
+                Improving Skeletal Muscle<br>
                 Regeneration in Aged Balb/c Mice, International Journal of
                 Molecular Sciences. 22(18), 10023
               </td>
@@ -86,9 +84,9 @@
               <td>2</td>
               <td>
                 Nam, W., Kim, H.,<strong> Kim, J.</strong>, Nam, B., Bae, C.,
-                Kim, J., Park, S., Lee, J, and Sim, J. (2021).<br />
+                Kim, J., Park, S., Lee, J, and Sim, J. (2021).<br>
                 Lactic Acid Bacteria and Natural Product Complex Ameliorate
-                <br />Ovalbumin-induced Airway Hyperresponsiveness in Mice.
+                <br>Ovalbumin-induced Airway Hyperresponsiveness in Mice.
                 Journal of Medicinal Foods. 24(5)
               </td>
               <td>
@@ -103,9 +101,9 @@
               <td>3</td>
               <td>
                 <strong>Kim, J.</strong>, Kim, J, Jeong, J., Choi, I., Park, S.,
-                Lee, J, and Sim, J. (2020).<br />
+                Lee, J, and Sim, J. (2020).<br>
                 Potential of Lilium lancifolium in Alleviating Pain and
-                Inflammation in <br />a Rat Model of Monosodium
+                Inflammation in <br>a Rat Model of Monosodium
                 Iodoacetate-Induced Osteoarthritis. Korean Journal of Plant
                 Resources. 33(6), 638-644
               </td>
@@ -121,9 +119,9 @@
               <td>4</td>
               <td>
                 Lee, H., Kim, J.,<strong> Kim, J.</strong>, Nam, B., and Kim, O.
-                (2020).<br />
+                (2020).<br>
                 Anti-Helicobacter pylori Activity of a Complex Mixture of
-                Lactobacillus paracasei HP7 Including <br />the Extract of
+                Lactobacillus paracasei HP7 Including <br>the Extract of
                 Perilla frutescens var. acuta and Glycyrrhiza glabra. Laboratory
                 Animal Research. 36(40)
               </td>
@@ -139,8 +137,8 @@
               <td>5</td>
               <td>
                 Nam, W., Kim, H., Bae, C., <strong>Kim, J.</strong>, Nam, B.,
-                Lee, Y., Kim, J., Park, S., Lee, J., and Sim, J. (2020).<br />Lactobacillus
-                HY2782 and Bifidobacterium HY8002 Decrease <br />Airway
+                Lee, Y., Kim, J., Park, S., Lee, J., and Sim, J. (2020).<br>Lactobacillus
+                HY2782 and Bifidobacterium HY8002 Decrease <br>Airway
                 Hyperresponsiveness Induced by Chronic PM2.5 Inhalation in Mice.
                 Journal of Medicinal Food. 23(6).
               </td>
@@ -156,9 +154,9 @@
               <td>6</td>
               <td>
                 Nam, B., Kim, S., Park, S., Kim, H.,<strong> Kim, J.</strong>,
-                Bae, C., Kim, J., Nam, W., Lee, J., and Sim, J. (2020).<br />
+                Bae, C., Kim, J., Nam, W., Lee, J., and Sim, J. (2020).<br>
                 Regulatory Effects of Lactobacillus plantarum HY7714 on
-                <br />Skin Health by Improving Intestinal Condition. PloS one.
+                <br>Skin Health by Improving Intestinal Condition. PloS one.
                 15(4), e0231268
               </td>
               <td>

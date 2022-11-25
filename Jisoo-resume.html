@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Jisoo-resume" />
-    <link href="style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="description" content="Jisoo-resume">
+    <link href="style.css" rel="stylesheet">
 
     <title>Jisoo Kim - Website</title>
   </head>
   <body>
     <div class="main">
-      <input id="dark-mode" type="checkbox" name="dark-mode">
-      <label for="dark-mode">
-        <span class="dark-mode">&#9789;</span>
-        <a> click for dark mode</a>
-       </label> 
+      <script  src="style.js"></script>
       <!-- menu (mobile size: menu icon shows up, checkbox) -->
+      <div class="head-class">
       <nav class="side-menu">
       <label class="menu-icon" aria-label="open menu" for="menu-toggle"
         >&#9776;
       </label>
-      <input type="checkbox" id="menu-toggle" />
-
+      <input type="checkbox" id="menu-toggle">
         <div class="menu-links">
           <a href="index.html" class="active">Home</a>
           <a href="Jisoo-about.html">About Jisoo</a>
           <a href="Jisoo-projects.html">Projects and Publications</a>
           <a href="Jisoo-resume.html">Resume</a>
+          <button type="button" value="dark" id="dark-button" onclick="onClick()">&#9789;</button>
         </div>
       </nav>
+      </div>
     <!-- main body -->
-      <div class="Home-main">
+      <div  id="Home-main" class="Home-main">
         <div class="text">
           <!-- resume pdf -->
           <h1>Resume</h1>
-          <p>This is my resume.<br /></p>
+          <p>This is my resume.<br></p>
         </div>
         <div
           class="resume-pdf"
           style="-webkit-overflow-scrolling: touch; overflow: auto"
         >
-          <iframe src="https://drive.google.com/file/d/1OHPoHJmUvFXGKD-j9zatCCWDYBSmdU5c/preview" width="640px" height="780px" allow="autoplay"></iframe>
+          <iframe src="https://drive.google.com/file/d/1OHPoHJmUvFXGKD-j9zatCCWDYBSmdU5c/preview" width="640" height="780" allow="autoplay"></iframe>
         </div>
       </div>
     </div>
