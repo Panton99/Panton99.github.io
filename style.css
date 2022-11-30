@@ -159,3 +159,66 @@
     height: 100%;
   }
   
+  .form_input {  
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  input, textarea {
+    background: none;
+    display: block;
+    border: none;
+    border-radius: 0;
+    width: 450px;
+    margin: 20px, 25px;
+    border-bottom: 2px solid #737879;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+  }
+  input, textarea :focus {
+      outline: none;
+  }
+
+  .form label {
+    font-size: 16px;
+    pointer-events: none;
+    left: 5px;
+    top: 5px;
+  }
+
+  #button-submit {
+    background: #685997;
+    color: snow;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: inset;
+    
+  }
+  .submit {
+    text-align: center;
+  }
+  #button-submit:hover {
+    background:#9b8ace;
+    box-shadow: inset;
+    transition: all 250ms ease-in-out;
+  }
+
+  .form h1, input::-webkit-input-placeholder, .submit {
+    transition: all 200ms ease-in-out;
+    text-align: center;
+  }
+
+  form {
+    box-sizing: border-box;
+    width: 500px;
+    margin:  100px auto 0;
+    padding-bottom: 50px;
+    border-radius: 2px;
+  }
+
+.error {
+  color: red;
+}

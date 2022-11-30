@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="style.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Submission page</title>
+    </head>
+    <body>
+        <div class="head-class">
+            <div class="header-wrapper">
+               <!-- menu (mobile size: menu icon shows up, checkbox) -->
+              <nav class="side-menu">
+                <label class="menu-icon" aria-label="open menu" for="menu-toggle"
+                >&#9776;
+                </label>
+                <input type="checkbox" id="menu-toggle" />
+                  <div class="menu-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="Jisoo-about.html">About Jisoo</a>
+                    <a href="Jisoo-projects.html">Projects and Publications</a>
+                    <a href="Jisoo-resume.html">Resume</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <button type="button" value="dark" id="dark-button" onclick="onClick()">&#9789;</button>
+                  </div>    
+              </nav>  
+            </div>
+          </div>
+            <!-- form -->
+           
+            <form class="form" id="form" method="post"  data-netlify="true">
+            <h1 class="h1">Submit</h1>
+            <input type="hidden" name="success" value="thanks.html">
+            <div class="wraper" id="wrapper">
+                <!-- First name text -->
+                <div class="form firstName">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="form_input" placeholder="Enter your first name" required>
+                    <small class="error" id ="fNameMsg"></small>
+                </div>
+                <!-- Last name text -->
+                <div class="form lastName">
+                    <label for="lastName">Last Name </label>
+                    <input type="text" id="lastName" name="lastName" class="form_input" placeholder="Enter your last name" required>
+                    <small class="error" id ="lNameMsg"></small>
+                </div>
+                <!-- Faculty's name text -->
+                <div class="form email">
+                    <label for="email">Email Address </label>
+                    <input type="text"  id="email" name="email" class="form_input" cols="30" rows="10" placeholder="abc@abc.com" required>
+                    <label for="body">Message </label>
+                    <textarea name="body" placeholder="Type your message" class="form_input"></textarea>    
+                    <small class="error" id ="emailMsg"></small>
+                </div>
+                <!-- Submission button -->
+                <div class="submit">
+                    <small class="error" id ="errMsg"></small>
+                    <button type="submit" id="button-submit" class="contact-form">Submit</button>
+                </div>
+                <div id="submitMsg"></div>
+            </div>
+        </form>   
+        
+       
+    </body>
+</html>
+
+
+
