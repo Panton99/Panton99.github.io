@@ -19,7 +19,7 @@ const valSubmit = (event) =>{
 
     fetch("/" , {
         method: "POST",
-        headers: {"Content-type": "application/x-www-form-urlendcoded"},
+        headers: {"Content-type": "application/x-www-form-urlencoded"},
         body: new URLSearchParams(data).toString(),
     }).then(() => console.log("Successfully submitted")).catch((error) => alert("Somethings wrong!"));
 
