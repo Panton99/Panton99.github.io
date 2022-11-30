@@ -7,21 +7,20 @@ function onClick() {
     element.classList.toggle("dark-mode");
 }
 
-const valSubmit = async (event) => {
+onst valSubmit = async (event) => {
     event.preventDefault();
     const form = event.target;
     const data = new FormData(form);
 
 
-    fetch("/" , {
-        method: "POST",
-        headers: {'Content-Type': "application/x-www-form-urlencoded"},
+    fetch('/contac.html', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
         body: new URLSearchParams(data).toString(),
     }).then(() => console.log("Successfully submitted")).catch((error) => alert(error));
 
 };
 document.querySelector("form").addEventListener("submit", valSubmit);
-
 
 
 // function validateName(val, status) {
